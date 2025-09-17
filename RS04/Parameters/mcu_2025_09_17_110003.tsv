@@ -1,0 +1,97 @@
+function code	name	parameter type	property	maximum value	minimum value	current value
+0X0000	Name	String	read/write			ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0X0001	BarCode	String	read/write			ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+0X1000	BootCodeVersion	String	Read-only			V
+0X1001	BootBuildDate	String	Read-only			Mar 26 2024
+0X1002	BootBuildTime	String	Read-only			7:59:25
+0X1003	AppCodeVersion	String	Read-only			0.1.0.5
+0X1004	AppGitVersion	String	Read-only			V
+0X1005	AppBuildDate	String	Read-only			Aug 23 2024
+0X1006	AppBuildTime	String	Read-only			13:22:58
+0X1007	AppCodeName	String	Read-only			z_motor
+0X2000	echoPara1	uint16	Configuration	86	5	74
+0X2001	echoPara2	uint16	Configuration	86	5	6
+0X2002	echoPara3	uint16	Configuration	86	5	19
+0X2003	echoPara4	uint16	Configuration	86	5	5
+0X2004	echoFreHz	uint32	Read/Write	10000	1	10
+0X2005	MechOffset	float	Read/Write	50	-50	3.283869
+0X2006	chasu_offset	float	Read/Write	50	-50	4.465418
+0X2007	ElecOffset	float	Read Write	10	-10	-5.900475
+0X2008	I_FW_MAX	float	Read/Write	33	0	0.000000
+0X2009	CAN_ID	uint8	set up	127	0	1
+0X200a	CAN_MASTER	uint8	set up	127	0	0
+0X200b	CAN_TIMEOUT	uint32	Read/Write	100000	0	0
+0X200c	motorOverT emp	int16	Read/Write	1500	0	1450
+0X200d	overTempTime	uint32	Read/Write	1000000	1000	1
+0X200e	GearRatio	float	Read/Write	64	1	9.000000
+0X200f	Kt_Nm/Amp	float	Read/Write	20	0	1.500000
+0X2010	Tqcali_Type	uint8	Read/Write	1	0	1
+0X2011	cur_filt_gain	float	Read/Write	1	0	0.100000
+0X2012	cur_kp	float	Read/Write	200	0	0.170000
+0X2013	cur_ki	float	Read/Write	200	0	0.012000
+0X2014	spd_kp	float	Read/Write	200	0	6.000000
+0X2015	spd_ki	float	Read/Write	200	0	0.020000
+0X2016	loc_kp	float	Read/Write	200	0	80.000000
+0X2017	spd_filt_gain	float	Read/Write	1	0	0.100000
+0X2018	limit_spd	float	Read/Write	200	0	20.000000
+0X2019	limit_cur	float	Read/Write	150	0	90.000000
+0X201a	spd_step_value	float	Read/Write	150	0	0.020000
+0X201b	vel_max	float	Read/Write	20	0	10.000000
+0X201c	acc_set	float	Read/Write	1000	0	10.000000
+0X201d	fault1	uint32	set up	30000	0	0
+0X201e	fault2	uint32	set up	30000	0	1
+0X201f	fault3	uint32	set up	30000	0	0
+0X2020	fault4	uint32	set up	30000	0	0
+0X2021	fault5	uint32	set up	30000	0	0
+0X2022	fault6	uint32	set up	30000	0	0
+0X2023	fault7	uint32	set up	30000	0	0
+0X3000	timeUse0	uint16	Read-only			3
+0X3001	timeUse1	uint16	Read-only			0
+0X3002	timeUse2	uint16	Read-only			13
+0X3003	timeUse3	uint16	Read-only			0
+0X3004	encoderRaw	uint16	Read-only			13218
+0X3005	mcuTemp	int16	Read-only			326
+0X3006	motorTemp	int16	Read-only			260
+0X3007	encoder2raw	uint16	Read-only			9397
+0X3008	adc1Offset	int32	Read-only			2044
+0X3009	adc2Offset	int32	Read-only			2056
+0X300a	adc1Raw	uint16	Read-only			2046
+0X300b	adc2Raw	uint16	Read-only			2057
+0X300c	VBUS	float	Read-only			29.785000
+0X300d	cmdId	float	Read-only			0.000000
+0X300e	cmdIq	float	Read-only			0.000000
+0x300f	cmdlocref	float	Read-only			0.000000
+0X3010	cmdspdref	float	Read-only			0.000000
+0X3011	cmdTorque	float	Read-only			0.000000
+0X3012	cmdPos	float	Read-only			0.000000
+0X3013	cmdVel	float	Read-only			0.000000
+0X3014	rotation	int16	Read-only			-1
+0X3015	modPos	float	Read-only			5.070574
+0X3016	mechPos	float	Read-only			3.283741
+0X3017	mechVel	float	Read-only			0.004644
+0X3018	elecPos	float	Read-only			1.100604
+0X3019	ia	float	Read-only			0.000000
+0X301a	ib	float	Read-only			0.000000
+0X301b	ic	float	Read-only			0.000000
+0X301c	timeout	int32	Read-only			0
+0X301d	phaseOrder	uint8	Read-only			1
+0X301e	iqf	float	Read-only			0.000000
+0X301f	boardTemp	int16	Read-only			286
+0X3020	iq	float	Read-only			0.000000
+0X3021	id	float	Read-only			0.000000
+0X3022	faultSta	uint32	Read-only			0
+0X3023	warnSta	uint32	Read-only			0
+0X3024	drv_fault	uint16	Read-only			0
+0X3025	drv_temp	uint16	Read-only			0
+0X3026	Uq	float	Read-only			0.000000
+0X3027	position_offset	float	Read-only			-1.211461
+0X3028	as_angle	float	Read-only			5.069807
+0X3029	cs_angle	float	Read-only			3.603704
+0X302a	chasu _angle	float	Read-only			1.466102
+0X302b	ibus	float	Read-only			0.000000
+0X302c	Elec_Offset	float	Read-only			-5.900475
+0X302d	torque_fdb	float	Read-only			0.000000
+0X302e	rated_i	float	Read-only			19.000000
+0X302f	MechPos_init	float	Read-only			0.000000
+0X3030	vel_max	float	Read-only			10.000000
+0X3031	loc_ reff	float	Read-only			0.000000
